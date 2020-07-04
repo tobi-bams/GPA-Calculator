@@ -5,7 +5,85 @@
         <link rel="stylesheet" type="text/css" href="./css/main.css">
     </head>
     <body>
-        <h1>GPA Calculator</h1>
+        <header>
+            <h1>GPA Calculator</h1>
+        </header>
+      
+        <main class="structure">
+            <article>
+                <p>This a Simple GPA calculator thats meant to enable student calculate their GPA and CGPA results</p>
+                <p>It will also help students set goals for the session or semester, thereby helping them know the grades they are suppose to make inorder to get a particular point or inorder for them to reach their goals</p>
+            </article>
+            <article class="mainBody">
+                <aside id="rowMain" class="courseTitle">
+                    <h2>Course Title/Course Code</h2>
+                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
+                </aside>
+                <aside id="creditUnitRow" class="creditLoad">
+                    <h2>Credit Unit</h2>
+                    <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
+                    <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
+                    <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
+                    <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
+                    <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
+                </aside>
+                <aside id="gradeRow">
+                    <h2>Grade</h2>
+                    <select class="grade">
+                        <option>--SELECT--</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                    </select>
+                    <select class="grade">
+                            <option>--SELECT--</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                    </select>
+                    <select class="grade">
+                        <option>--SELECT--</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                    </select>
+                    <select class="grade">
+                        <option>--SELECT--</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                    </select>
+                    <select class="grade">
+                        <option>--SELECT--</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                    </select>
+                </aside>
+            </article>
+            <div>
+               <button id="row" onclick="addRows()">Add new Row</button> 
+            </div>
+        </main>
     </body>
     <script src="./index.js"></script>
 </html>
