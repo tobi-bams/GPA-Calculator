@@ -1,4 +1,4 @@
-function addRows(){
+function addRows() {
     let rowBody = document.getElementById('rowMain');
     let rows = document.getElementsByClassName('courseCode');
     let creditUnitRow = document.getElementById('creditUnitRow');
@@ -13,6 +13,7 @@ function addRows(){
     /**
      Code for adding a new Credit Unit Element
      */
+	
     let newCreditUnitRow = document.createElement('INPUT');
     newCreditUnitRow.setAttribute("type", "number");
     newCreditUnitRow.setAttribute("placeholder", "Enter Credit Unit");
