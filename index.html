@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>GPA Calculator</title>
         <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./font-awesome//css/font-awesome.min.css">
+        <meta name="viewport" content="">
     </head>
     <body>
         <header>
@@ -16,23 +18,23 @@
                 <p>It will also help students set goals for the session or semester, thereby helping them know the grades they are suppose to make inorder to get a particular point or inorder for them to reach their goals</p>
             </article>
             <article class="mainBody">
-                <aside id="rowMain" class="courseTitle">
-                    <h2>Course Title/Course Code</h2>
-                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
-                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
-                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
-                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
-                    <input type="text" placeholder="Enter Course Code or Course Title" class="courseCode">
+                <aside id="rowMain" >
+                    <h2>Course Code</h2>
+                    <input type="text" placeholder="Enter Course Code" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code" class="courseCode">
+                    <input type="text" placeholder="Enter Course Code" class="courseCode">
                 </aside>
-                <aside id="creditUnitRow" class="creditLoad">
+                <aside id="creditUnitRow" >
                     <h2>Credit Unit</h2>
-                    <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
+                    <input type="number"  placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
                 </aside>
-                <aside id="gradeRow">
+                <aside id="gradeRow" >
                     <h2>Grade</h2>
                     <select class="grade">
                         <option>--SELECT--</option>
@@ -81,9 +83,20 @@
                     </select>
                 </aside>
             </article>
-            <div>
-               <button id="row" onclick="addRows()">Add new Row</button> 
-            </div>
+           <section class="buttons">
+                <div>
+                    <button id="reset"><i class="fa fa-times" aria-hidden="true"></i>Reset</button> 
+                </div>
+                <div>
+                <button id="calculate" onclick="calculate()"><i class="fa fa-check" aria-hidden="true"></i>Calculate</button> 
+                </div>
+                <div>
+                    <button id="row" onclick="addRows()"><i class="fa fa-plus" aria-hidden="true"></i>Add new Row</button> 
+                </div>
+            </section>
+            <section>
+                <p id="result">Your GPA:<span id="resultValue"></span></p>
+            </section>
         </main>
     </body>
     <script src="./index.js"></script>
