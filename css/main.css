@@ -164,7 +164,7 @@ button:hover{
     }
 
     p {
-        font-size: 0.5em;
+        font-size: 1em;
         text-align: justify;
     }
 
@@ -201,6 +201,7 @@ button:hover{
     #reset, #calculate, #row{
         margin-top: 1.5em;
         height: 1.5em;
+        font-size: 1em;
        
     }
 
