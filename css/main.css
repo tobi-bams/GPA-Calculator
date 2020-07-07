@@ -139,19 +139,74 @@ button:hover{
 @media (max-width: 768px) { 
 
     header h1{
-        padding-left: 5%;
-        color: grey;
+       
         font-weight: 400;
         font-size: 1rem;
-        margin: 0;
-        padding-top: 0.4em;
-        padding-bottom: 0.4em;
+        
     }
 
     main{
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
         margin-top: 4%;
     }
+
+    #rowMain h2{
+        font-size: 0.75em;
+        
+    }
+    #creditUnitRow h2{
+        font-size: 0.75em;
+    }
+    
+    #gradeRow h2{
+        font-size: 0.75em;
+    }
+
+    p {
+        font-size: 0.5em;
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 1em;
+        
+    }
+
+    input[type=text]{
+        height: 1.5em;
+        margin-bottom: 0.25em;
+        font-size: 0.5em;
+        outline: none;
+        padding-left: 1em;
+        font-weight: 400;
+    }
+
+    
+    input[type=number]{
+        height: 1.5em;
+        margin-bottom: 0.25em;
+        font-size: 0.5em;
+        padding-left: 1em;
+    
+    }
+
+    select{
+        height: 1.7em;
+        margin-bottom: 0.25em;
+        font-size: 0.5em;
+        padding-left: 1em;
+    }
+
+    #reset, #calculate, #row{
+        margin-top: 1.5em;
+        height: 1.5em;
+       
+    }
+
+    #result{
+        font-size: 1.5em;
+    }
+    
  }
 
