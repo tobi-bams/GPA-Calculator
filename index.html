@@ -18,23 +18,23 @@
                 <p>It will also help students set goals for the session or semester, thereby helping them know the grades they are suppose to make inorder to get a particular point or inorder for them to reach their goals</p>
             </article>
             <article class="mainBody">
-                <aside id="rowMain" >
+                <form id="rowMain" >
                     <h2>Course Code</h2>
                     <input type="text" placeholder="Enter Course Code" class="courseCode">
                     <input type="text" placeholder="Enter Course Code" class="courseCode">
                     <input type="text" placeholder="Enter Course Code" class="courseCode">
                     <input type="text" placeholder="Enter Course Code" class="courseCode">
                     <input type="text" placeholder="Enter Course Code" class="courseCode">
-                </aside>
-                <aside id="creditUnitRow" >
+                </form>
+                <form id="creditUnitRow" >
                     <h2>Credit Unit</h2>
                     <input type="number"  placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
                     <input type="number" placeholder="Enter Credit Unit" class="creditUnit">
-                </aside>
-                <aside id="gradeRow" >
+                </form>
+                <form id="gradeRow" >
                     <h2>Grade</h2>
                     <select class="grade">
                         <option>--SELECT--</option>
@@ -81,11 +81,11 @@
                         <option value="E">E</option>
                         <option value="F">F</option>
                     </select>
-                </aside>
+                </form>
             </article>
            <section class="buttons">
                 <div>
-                    <button id="reset"><i class="fa fa-times" aria-hidden="true"></i>Reset</button> 
+                    <button id="reset" onclick="resetForm()"><i class="fa fa-times" aria-hidden="true"></i>Reset</button> 
                 </div>
                 <div>
                 <button id="calculate" onclick="calculate()"><i class="fa fa-check" aria-hidden="true"></i>Calculate</button> 
@@ -95,7 +95,7 @@
                 </div>
             </section>
             <section>
-                <p id="result">Your GPA:<span id="resultValue"></span></p>
+                <p id="result">Your GPA: <span id="resultValue"></span></p>
             </section>
         </main>
     </body>

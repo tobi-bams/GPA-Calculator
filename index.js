@@ -1,12 +1,16 @@
+let rowBody = document.getElementById('rowMain');
+let rows = document.getElementsByClassName('courseCode');
+let creditUnitRow = document.getElementById('creditUnitRow');
+let gradeRow = document.getElementById('gradeRow');
+let grades = document.getElementsByClassName('grade');
+let courseUnit = document.getElementsByClassName('creditUnit');
+let resultView = document.getElementById('resultValue');
+
 function addRows() {
-    let rowBody = document.getElementById('rowMain');
-    let rows = document.getElementsByClassName('courseCode');
-    let creditUnitRow = document.getElementById('creditUnitRow');
-    let gradeRow = document.getElementById('gradeRow');
 
     let newRow = document.createElement('INPUT');
     newRow.setAttribute("type", "text");
-    newRow.setAttribute("placeholder", "Enter Course Title or Course Code");
+    newRow.setAttribute("placeholder", "Enter Course Code");
     newRow.className = "courseCode";
 
 
@@ -71,7 +75,71 @@ function addRows() {
     rowBody.appendChild(newRow);
     creditUnitRow .appendChild(newCreditUnitRow);
     gradeRow.appendChild(newGradeRow);
-    console.log(rows.length);
-    console.log(newRow.className);
-    console.log(newOption7.value);
+
+}
+
+function calculate(){
+    let totalCreditUnit = 0;
+    let totalCreditGrade = 0;
+
+    for(i = 0; i < rows.length; i++){
+        let rowValue =rows[i].value;
+        let creditValue = courseUnit[i].value;
+        let gradeValue = grades[i].value;
+
+        if(gradeValue === "A"){
+            gradeValue = 5;
+        }
+
+        else if(gradeValue === "B"){
+            gradeValue  = 4;
+        }
+
+        else if(gradeValue === "C"){
+            gradeValue  = 3;
+        }
+
+        else if(gradeValue === "D"){
+            gradeValue  = 2;
+        }
+
+        else if(gradeValue === "E"){
+            gradeValue  = 1;
+        }
+
+        else {
+            gradeValue  = 0;
+        }
+        
+        if(creditValue === ""){
+            creditValue = 0;
+        }
+        
+        let numCreditValue = parseInt(creditValue);
+
+        let gradeNumericValue = creditValue * gradeValue;
+        
+        totalCreditUnit += numCreditValue;
+
+        totalCreditGrade += gradeNumericValue;
+
+    }
+    let result;
+    if(totalCreditGrade === 0 || (totalCreditGrade === 0 && totalCreditUnit=== 0)){
+        result = "0.00";
+    }
+  
+    else{
+        let gpa = totalCreditGrade/totalCreditUnit;
+         result = gpa.toFixed(2);
+    }
+   
+    resultView .innerHTML = result;
+}
+
+function resetForm(){
+    rowBody.reset();
+    creditUnitRow.reset();
+    gradeRow.reset();
+
 }
