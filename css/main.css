@@ -169,14 +169,14 @@ button:hover{
     }
 
     h1 {
-        font-size: 1em;
+        font-size: 1.2em;
         
     }
 
     input[type=text]{
-        height: 1.5em;
+        height: 1.8em;
         margin-bottom: 0.25em;
-        font-size: 0.5em;
+        font-size: 0.7em;
         outline: none;
         padding-left: 1em;
         font-weight: 400;
@@ -184,24 +184,24 @@ button:hover{
 
     
     input[type=number]{
-        height: 1.5em;
+        height: 1.8em;
         margin-bottom: 0.25em;
-        font-size: 0.5em;
+        font-size: 0.7em;
         padding-left: 1em;
     
     }
 
     select{
-        height: 1.7em;
+        height: 2em;
         margin-bottom: 0.25em;
-        font-size: 0.5em;
+        font-size: 0.7em;
         padding-left: 1em;
     }
 
     #reset, #calculate, #row{
         margin-top: 1.5em;
-        height: 1.5em;
-        font-size: 1em;
+        height: 1.8em;
+        font-size: 0.5em;
        
     }
 
