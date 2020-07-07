@@ -138,10 +138,6 @@ button:hover{
 
 @media (max-width: 768px) { 
 
-    body{
-
-    }
-
     header h1{
        
         font-weight: 400;
