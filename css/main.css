@@ -2,7 +2,7 @@
 body{
     margin: 0 auto;
     font-family: roboto, poppins;
-    background-image: linear-gradient(to right, yellow, red);
+    background-image: linear-gradient(to right, #667eea, red);
     
 }
 /** the Header Style **/
@@ -137,6 +137,10 @@ button:hover{
 }
 
 @media (max-width: 768px) { 
+
+    body{
+
+    }
 
     header h1{
        
