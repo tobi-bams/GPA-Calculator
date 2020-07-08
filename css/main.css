@@ -186,7 +186,7 @@ button:hover{
     input[type=number]{
         height: 1.6em;
         margin-bottom: 0.25em;
-        font-size: 0.7em;
+        font-size: 0.6em;
         padding-left: 1em;
     
     }
@@ -194,7 +194,7 @@ button:hover{
     select{
         height: 1.8em;
         margin-bottom: 0.25em;
-        font-size: 0.7em;
+        font-size: 0.6em;
         padding-left: 1em;
     }
 
